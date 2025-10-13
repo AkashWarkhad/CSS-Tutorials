@@ -1,0 +1,41 @@
+/* UNIVERSAL SELECTOR Which applie on all */
+*{
+    color: white;
+}
+
+/* ELEMENT SELECTOR which applies on the specific element */
+h1 {
+    color: red;
+    background-color: green;
+    color: rgb(255, 0, 0);  /* Red Using Rgb color */
+    color: #ff0000;         /* Red Using HexaDecimal color */
+}
+
+p {
+    color: purple;
+
+}
+
+button {
+    color: aqua;
+    background-color: green;
+}
+
+body {
+    background: black;
+}
+
+/* ID SELECTOR which applies on the specific element which used Id */
+
+#head2_1 {
+    color: burlywood;
+}
+
+#head2_2 {
+    color: chartreuse;
+}
+
+/* CLASS SELECTOR which applied on the elements which shares the same class names */
+.yelloClass {
+    color: yellow;
+}

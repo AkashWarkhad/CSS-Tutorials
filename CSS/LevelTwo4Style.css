@@ -1,0 +1,108 @@
+/* Id Selector */
+
+#heading {
+    text-align: center;
+}
+
+#h1{
+    height: 50px;
+    width: 200px;
+    text-align: left;
+    background-color: #cfcf0e;
+    /* 
+    border-width: 4px;
+    border-style: dashed;
+    border-color: green; 
+    |
+    > Above 3 lines can witten in the 1 go using border*/
+
+    border: 4px dashed green; 
+}
+
+/*  > inline - Takes only the space required by the element. (no margin/ padding)
+    > block - Takes full space available in width.
+
+    > inline-block - Similar to inline but we can set margin & padding.
+    > none - To remove element from document flow. */
+
+#displayDiv {
+    background-color: pink;
+    display: inline;
+}
+
+#displayButton {
+    background-color: yellow;
+    display:block
+}
+
+#box1{
+    background-color: rgba(0, 0, 255, 0.5);  /* color opacity (0-1): rgba(255, 0, 0, 1); */
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+
+
+
+#box2{
+    background-color: rgba(0, 255, 0, 0.75);
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    visibility: hidden;  /* Note : When visibility is set to none, space for the element is reserved.
+                            But for display set to none, no space is reserved or blocked for the element. */
+}
+
+#box3{
+    background-color: rgba(255, 0, 0, 1);
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+
+
+/* Class Selector */
+.styles {
+    height: 50px;
+    width: 200px;
+    background-color: lightpink;
+    /* border-width: 4px;
+    border-style: dashed;
+    border-color: green; 
+    
+    Above 3 lines can witten in the 1 go using border*/
+    border: 4px dashed green;
+
+    /* To make round border corners  */
+    border-radius: 15px;
+    /* border-radius: 50%; <- to create a circle */
+
+    /* Padding Left, right, top, bottom in px & 00% */
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    
+    In One Go : padding: top right bottom left; <- clock-wise format */
+    padding:20px 10px 20px 10px;
+
+    /* padding: 5%; <- Common to all in % */
+
+
+    /* Margin Left, right, top, bottom in px & 00% */
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    
+    In One Go :margin: top right bottom left; <- clock-wise format */
+    margin: 20px 10px 20px 10px;
+
+    /* margin: 10%; <- Common to all in % */
+}
+
+/* Element Selector */
