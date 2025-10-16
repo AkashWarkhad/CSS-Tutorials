@@ -14,17 +14,18 @@
     font-size: 0.5em;   /*  <======== em in case of font-size means the half size of the box1 font-size
      so here its 10px; */
     
-    width: 11em;   /*  <======== em in case is depends on the self (box2 font-size) elements & not the parent 
-    font size so its 11 time 10 (20 X 0.5 = 10) */
+    width: 11em;   /*  <======== 11em in case is depends on the self (box2 font-size) elements & not the parent 
+    font size so its 11 time 10  "Excptional for width Element" */
 
     /* rem : font-size of the root elements */
-    margin-top: 2rem; /* text font size is 16 px rem : 2 X 16 = 32 px from top*/
+    margin-top: 2rem; /* text self font size is 16 px rem : 2 X 16 = 32 px from top*/
 
-    /* vh: relative to 1% viewport height */
-    height: 15vh;
+    /* vh: relative to 1% viewport height means 1% of total screen size */
+    height: 20vh;
 
     /* vw : relative to 1% viewport width  */
+    width: 50vw; /*Comments this if you want to see above width effect*/
     
-   
+    
 
 }
