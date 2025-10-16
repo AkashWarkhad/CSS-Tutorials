@@ -1,0 +1,50 @@
+
+div {
+    padding: 2.5%;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline;
+}
+
+#box1 {
+    /* static - default position (The top, right, bottom, left, and z-index properties have no effect) */
+    position: static;
+    background-color: pink;
+}
+
+
+/* relative - element is relative to itself. (The top, right, bottom, left, and z-index will work) */
+#box2 {
+    position: relative;
+    background-color: greenyellow;
+
+    top: 15px;
+    left: 10px;
+    z-index: 1; /*Overlapping elements with a larger z-index cover those with a smaller one.*/
+}
+
+/* absolute - positioned relative to its closest positioned non static ancistor. (Here in case body tag as its close ancistor) */
+#box3 {
+    position: absolute;
+    background-color: orange;
+    top: 900px;
+    z-index: -1;
+}
+
+/* fixed - positioned relative to browser. (removed from flow) */
+#box4 {
+    position: fixed;
+    background-color: violet;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+/* sticky - positioned based on user's scroll position means the box will stuck when it reach at the top while scrolling  */
+#box5 {
+    position: sticky;
+    background-color: lightgrey;
+    top: 0;
+}
+
+
