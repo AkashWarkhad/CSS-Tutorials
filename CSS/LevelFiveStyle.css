@@ -1,0 +1,45 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    
+    /* The special value none, which specifies that no transitions will occur on this element. This is the default value.
+    One or more single-property transitions, separated by commas. 
+    eg. 
+    transition: 
+        margin-right,
+        4s,
+        ease-in-out,
+        1s;
+    */
+    transition: all;
+
+    /* We can also apply the specific property also like below : */
+    transition-duration: 2s;
+
+    /* Transit in the given steps within above duration (2sec) */
+    transition-timing-function:steps(3);
+
+    /* Transit like ease in - start slowly & end fastly */
+    transition-timing-function: ease-in;
+
+    /* Transition Delay before applying effect */
+    transition-delay: 1s;
+
+    /* Transition Shorthand
+        property name | duration | timing-function | delay */
+    transition : all      2s         ease-in            1
+}
+
+/* Change state into white color once cursor on the element */
+div:hover {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+/* Change state into green color once we press cursor on the element */
+div:active {
+    background-color: green;
+}

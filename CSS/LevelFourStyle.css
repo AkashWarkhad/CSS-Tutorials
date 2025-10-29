@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+
+#container {
+    height: 600px;
+    width: 600px;
+    display: flex; /* This is how element is register as a flex */
+
+    /* Flexbox Direction :
+    It sets how flex items are placed in the flex container, along which axis and direction.
+    flex-direction : row; (default) b1 b2 b3 ..
+    flex-direction : row-reverse;   .. b3 b2 b1
+    flex-direction : column;  b1 b2 b3... veritcally
+    flex-direction : column-reverse; .. b3 b2 b1 vertically */
+    flex-direction: row;
+
+    /* Flex Properties : for Flex @@@@ Container @@@@@@*/
+
+     /* justify-content : alignment along the main axis.
+        flex-start  -> from left
+        / flex-end  -> from right
+        centre      -> Center
+        space-evenly  -> distriute space of container evenly in all
+        space-around  -> start & end space is half then mid
+        space-between -> start & end has no space only in the mid
+    */
+    justify-content : center;
+
+    /* flex-wrap : nowrap / wrap / wrap-reverse (Basically its wraps the content & if space are low then moving it to new line) */
+    flex-wrap: wrap;
+
+    /* align-items : alignment along the cross axis. (Its align at cross or veritical axis only */
+    align-items: flex-start;
+
+    /* align-content : alignment of space between & around the content along cross-axis */
+    /* align-content: flex-start; */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: lightgray;
+    height: 150px;
+
+    /* Flex Properties : for Flex @@@@ Item @@@@ */
+     /* align-self : alignment of individual along the cross axis. */
+    align-self: flex-end;
+}
+
+#box3 {
+    background-color: yellow;
+    /* Flex Properties : for Flex @@@@ Item @@@@ */
+    /* flex-grow : how much a flex item will grow relative to the rest of the flex items if
+        space is available*/
+    /* flex-shrink: 1; */
+}
+
+#box4 {
+    background-color: pink;
+    /* flex-shrink : how much a flex item will shrink relative to the rest of the flex items if
+        space is available  */
+    /* flex-grow: 3; */
+}
+
+#box5 {
+    background-color: green;
+}
+
+/* Min means from 300 to onwards color will be applied */
+@media (min-width: 300px) {
+        #mediaId {
+            background-color: red;
+        }
+}
+
+/* Here this means minimum 100px to Maximum 250px color will be applied */
+@media (min-width: 100px) and (max-width: 250px){
+    #mediaId {
+        background-color: aqua;
+    }
+}

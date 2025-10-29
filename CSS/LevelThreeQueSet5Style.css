@@ -3,6 +3,9 @@ div {
     width: 300px;
     background-image: url("/Nature.jpg");
     background-size: cover;
+    position: fixed;
+    top: 90px;
+    
 }
 
 h3{
