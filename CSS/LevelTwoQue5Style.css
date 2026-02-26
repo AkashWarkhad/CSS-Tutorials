@@ -21,15 +21,15 @@
 /* Element Selector */
 button {
     background-color: #f08804;
-    padding: 4px 4px 4px 4px;
+    padding: 4px;
 }
 
 a {
-    margin-right: 200px;
     text-decoration: none;
+    margin-inline-end: 200px;
 }
 
 input{
-    padding: 4px 4px 4px 4px;
+    padding: 4px;
 }
 

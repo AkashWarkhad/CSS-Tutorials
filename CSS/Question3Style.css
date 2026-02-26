@@ -8,7 +8,7 @@
     background-color: white;
     text-align: start;
     text-decoration: wavy underline red;
-    font-weight: 100;
+    font-weight: 100; /* font-weight : normal / bold / bolder / lighter*/
     font-family: 'Franklin Gothic Medium';
     line-height: normal;
     text-transform: uppercase;
@@ -30,7 +30,8 @@
 
 #para1 {
     font-size: 25px;
-    text-transform:uppercase;
+    text-transform:uppercase; /* uppercase / lowercase / capitalize / none*/
+    line-height: 25px;
 }
 
 #para2 {
@@ -51,7 +52,6 @@
 }
 
 /* Class Selector */
-
 .heading {
     color: red;
 }
@@ -63,8 +63,9 @@ button {
     background: green;
 }
 
+
 p {
-    text-align:start;
+    text-align: start;  /* start/center/left/right */
 }
 
 h4 {

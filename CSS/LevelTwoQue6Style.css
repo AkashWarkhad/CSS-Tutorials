@@ -16,8 +16,6 @@
     color: #f08804;
 }
 
-
-
 /* Element Selector */
 button {
     background-color: #f08804;
@@ -31,7 +29,7 @@ a {
 }
 
 input{
-    padding: 4px 4px 4px 4px;
+    padding: 4px;
 }
 
 /* Class Selector */
@@ -56,4 +54,3 @@ footer {
 #content {
     height: 665px;
 }
-
