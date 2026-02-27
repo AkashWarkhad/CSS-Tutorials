@@ -1,29 +1,29 @@
-div {
+body {
     background-color: chocolate;
     height: 200px;
     width: 200px;
 }
 
 @media (max-width: 300px){
-    div {
+    body {
         background-color: green;
     }
 }
 
 @media (min-width: 300px) and (max-width: 400px){
-    div{
+    body{
         background-color: pink;
     }
 }
 
 @media (min-width: 400px) and (max-width: 600px){
-    div {
+    body {
         background-color: red;
     }
 }
 
 @media (min-width: 600px) {
-    div{
+    body{
         background-color: blue;
     }
 }

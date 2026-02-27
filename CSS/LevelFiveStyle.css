@@ -13,18 +13,21 @@ div {
         ease-in-out,
         1s;
     */
-    transition: all;
 
-    /* We can also apply the specific property also like below : */
+    /* transition-property : property you want to transition (font-size, width etc.)*/
+    transition-property: all;
+
+    /* We can also apply the specific property also like below : transition-duration : 2s / 4ms .. */
     transition-duration: 2s;
 
     /* Transit in the given steps within above duration (2sec) */
     transition-timing-function:steps(3);
 
-    /* Transit like ease in - start slowly & end fastly */
+    /* Transit like ease in - start slowly & end fastly 
+    transition-timing-function : ease-in / ease-out / linear / steps ..*/
     transition-timing-function: ease-in;
 
-    /* Transition Delay before applying effect */
+    /* Transition Delay before applying effect, 2s / 4ms ..*/
     transition-delay: 1s;
 
     /* Transition Shorthand
@@ -36,10 +39,16 @@ div {
 div:hover {
     background-color: red;
     color: white;
-    font-size: 25px;
+    font-size: 55px;
+    height: 250px;
+    width: 250px;
 }
 
 /* Change state into green color once we press cursor on the element */
 div:active {
     background-color: green;
+    color: red;
+    font-size: 55px;
+    height: 250px;
+    width: 250px;
 }

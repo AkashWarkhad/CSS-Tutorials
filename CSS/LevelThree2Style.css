@@ -1,5 +1,6 @@
 h1 {
     color: white;
+    text-align: center;
 }
 
 div {
@@ -9,33 +10,67 @@ div {
     display: inline;
 }
 
-#box1 {
-    /* static - default position (The top, right, bottom, left, and z-index properties have no effect) */
+/* static -
+    🔹 This is the default position of all elements.
+    🔹 Elements follow the normal document flow (top to bottom).
+    🔹 top, left, right, bottom do NOT work here.
+    🔹 z-index properties have no effect
+    🔹This behave same as like paragraph content
+    🔹This Used when you don’t need special positioning. 
+*/
+#static {
     position: static;
     background-color: pink;
+    color: white;
+    /* z-index: 100; <- this not work for static*/
 }
 
 
-/* relative - element is relative to itself. (The top, right, bottom, left, and z-index will work) */
-#box2 {
+/* relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
+    🔹 Moves element relative to its original position.
+    🔹 Original space is still maintained.
+    👉 Element moves 20px down and 30px right from where it originally was.
+    ✔ Used when you want small adjustments.
+*/
+#relative {
     position: relative;
     background-color: greenyellow;
 
-    top: 15px;
-    left: 10px;
-    z-index: 1; /*Overlapping elements with a larger z-index cover those with a smaller one.*/
+    top: 20px;
+    left: 30px;
+    z-index: 1; /*Overlapping the elements with a larger z-index value will cover those with a smaller z-index value. 1 overlaps -1*/
 }
 
-/* absolute - positioned relative to its closest positioned non static ancistor. (Here in case body tag as its close ancistor) */
-#box3 {
+/* absolute - positioned relative to its closest positioned non static ancistor. (Here in case body tag as its close ancistor)
+    🔹 Removed from normal flow.
+    🔹 Positioned relative to the nearest positioned parent (relative/absolute/fixed/sticky).
+    🔹 If no positioned parent → relative to body.
+    👉 Child will stick to the top-right of the parent when its parent relative to body.
+    ✔ Very useful for:
+        - Badges
+        - Icons inside input
+        - Custom dropdowns
+*/
+#absolute {
     position: absolute;
     background-color: orange;
-    top: 900px;
-    z-index: -1;
+    top: 500px;
+    left: 500px;
+    z-index: 1;
+    color: white;
 }
 
-/* fixed - positioned relative to browser. (removed from flow) */
-#box4 {
+/* fixed - positioned relative to browser. (removed from flow) 
+    🔹 Removed from normal flow.
+    🔹 Positioned relative to the browser window.
+    🔹 Stays fixed even when scrolling.  
+    ✔ Used for:
+        Sticky navbar/Headings
+        Chat button
+        Back to top button  
+*/
+#fixed {
+    color: white;
     position: fixed;
     background-color: violet;
     top: 0;
@@ -43,9 +78,28 @@ div {
     z-index: -1
 }
 
-/* sticky - positioned based on user's scroll position means the box will stuck when it reach at the top while scrolling  */
-#box5 {
+/* sticky - positioned based on user's scroll position means the box will stuck when it reach at the top
+ while scrolling  
+    🔹 Combination of relative + fixed.
+    🔹 Acts like relative until scroll reaches a limit.
+    🔹 Then becomes fixed.
+ */
+#sticky {
     position: sticky;
     background-color: lightgrey;
     top: 0;
 }
+
+
+
+/* 🎯 Easy Way to Remember
+
+Static → Normal
+
+Relative → Move from original spot
+
+Absolute → Stick inside parent
+
+Fixed → Stick to screen
+
+Sticky → Stick when scrolling */
