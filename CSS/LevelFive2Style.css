@@ -1,4 +1,5 @@
-div {
+div 
+{
     height: 150px;
     width: 150px;
     background-color: yellow;
@@ -26,20 +27,15 @@ div {
 
 }
 
-@keyframes ColorAnimate {
-    from { background-color: yellow; }
-    to { background-color: red; }   
-}
-
 @keyframes ColorAnimateAndPosition {
     from 
-    { 
+    {
         left: 0px;
         background-color: yellow; 
     }
     to 
     { 
-        left: 400px; 
+        left: 500px; 
         background-color: red;
     }
 }
@@ -47,11 +43,11 @@ div {
 #percent {
 
     margin-top: 300px;
-    /* animation: name   duration timing-function delay iteration-count     direction       fill-mode; */
-    animation:   Perwise   1.8s       ease-out        0s      infinite      alternate-reverse     forwards
+    /* animation:   name      duration    function    delay   iteration-count   direction       fill-mode; */
+    animation:   Percentwise   1.8s       ease-out     0s       infinite      alternate-reverse    forwards
 }
 
-@keyframes Perwise {
+@keyframes Percentwise {
     0% {
         left: 0px;
         background-color: yellow;
@@ -64,7 +60,7 @@ div {
     }
 
     100% {
-        left: 300px;
+        left: 500px;
         background-color: red;
         color: white;
     }

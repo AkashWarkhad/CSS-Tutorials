@@ -4,41 +4,46 @@ div
     width: 150px;
     background-color: yellowgreen;
     border: 2px solid black;
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    transition: all 1.5s ease-in-out 0.5s;
+    transition: all 1.5s ease-in-out 0.3s;
+    margin:145px;
 }
 
-#scaleAndRotate:hover
+#Scale:hover
 {
     background-color: red;
-    transform: scale(1.5);
-    
     /* Transform based on the specific axis */
-    /* transform: scaleX(2);
-    transform: scaleY(2);
-    transform: scaleZ(2); */
+    /* 
+    transform: scaleX(5);
+    transform: scaleZ(5);
+    transform: scaleY(5); 
+    */
+    
+    transform: scale(4.5);
+}
+
+#Rotate:hover
+{
+    background-color: blue;
 
     /* Rotate using trasnform */
     transform: rotate(360deg);
 }
 
-#x 
+#x:hover
 {
     left: 350px;
-    /* X axis rotate from horizontal DOWN side circular inside screen direction*/
+    /* X axis rotate from vertically DOWN side circular inside screen direction*/
     rotate: x 45deg;
 }
 
-#y
+#y:hover
 {
     left: 550px;
-    /* Y axis rotate from horizontal LEFT side circular inside screen direction */
+    /* Y axis rotate from vertically LEFT side circular inside screen direction */
     rotate: y 45deg;
 }
 
-#z
+#z:hover
 {
     left: 750px;
 
@@ -49,10 +54,6 @@ div
     rotate: z 45deg;
 }
 
-#translate {
-    position: relative;
-    margin-top: 300px;
-}
 
 /* Its shifts the block from original place to given direction */
 #translate:hover {
@@ -62,11 +63,6 @@ div
     transform: translateX(-200px);
     transform: translateY(-200px);
     transform: translate(300px,-80px);
-}
-
-#skew {
-    position: relative;
-    margin-left: 400px;
 }
 
 #skew:hover {
