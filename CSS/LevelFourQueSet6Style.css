@@ -1,7 +1,7 @@
 .navbar {
     background-color: lightpink;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* SpaceEvenly on horizontally */
 }
 
 a {

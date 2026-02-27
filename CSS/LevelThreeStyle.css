@@ -1,21 +1,21 @@
-#box1{
+#OuterBox{
     height: 200px;
     width: 200px;
     background-color: pink;
     font-size: 20px;
 }
 
-#box2 {
+#InnerBox {
     text-align: center;
 
     background-color: yellow;
     margin-left: 20%; /* <----------- 20 % of parents Box1 width size which is 200 X 0.20 = 40 */
     
     font-size: 0.5em;   /*  <======== em in case of font-size means the half size of the box1 font-size
-     so here its 10px; */
+     so here its 20px half = 10px; */
     
     width: 11em;   /*  <======== 11em in case is depends on the self (box2 font-size) elements & not the parent 
-    font size so its 11 time 10  "Excptional for width Element" */
+    font size so its 11 time 10 = 110 "Excptional for width Element" */
 
     /* rem : font-size of the root elements */
     margin-top: 2rem; /* text self font size is 16 px rem : 2 X 16 = 32 px from top*/
@@ -25,7 +25,11 @@
 
     /* vw : relative to 1% viewport width  */
     width: 50vw; /*Comments this if you want to see above width effect*/
-    
-    
-
 }
+
+/* 🔹 Common Interview Question
+
+❓ When to use vh/vw vs % , em , rem ?
+
+✔ Use % when sizing relative to parent
+✔ Use vh/vw when sizing relative to screen */

@@ -1,16 +1,17 @@
 body {
-    text-align: center;
+    text-align: center; /* right/left/justify*/
 }
 
 div {
     height: 100px;
     width: 150px;
-    display: inline-block;
+    display: inline-block; /* Take only required space + can apply margin & padding*/
     border: 2px solid black;
 }
 
 
-#container {
+#container 
+{
     height: 600px;
     width: 600px;
     display: flex; /* This is how element is register as a flex */
@@ -27,7 +28,7 @@ div {
 
      /* justify-content : alignment along the main axis.
         flex-start  -> from left
-        / flex-end  -> from right
+        flex-end  -> from right
         centre      -> Center
         space-evenly  -> distriute space of container evenly in all
         space-around  -> start & end space is half then mid
@@ -63,24 +64,31 @@ div {
     /* Flex Properties : for Flex @@@@ Item @@@@ */
     /* flex-grow : how much a flex item will grow relative to the rest of the flex items if
         space is available*/
-    /* flex-shrink: 1; */
+    flex-grow: 4;
 }
 
 #box4 {
     background-color: pink;
     /* flex-shrink : how much a flex item will shrink relative to the rest of the flex items if
         space is available  */
-    /* flex-grow: 3; */
+    flex-grow: 3;
 }
 
 #box5 {
     background-color: green;
 }
 
+#mediaId {
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+}
+
 /* Min means from 300 to onwards color will be applied */
-@media (min-width: 300px) {
+@media (min-width: 500px) and (max-width: 700px) {
         #mediaId {
-            background-color: red;
+            background-color: green;
+            width: 300px;
         }
 }
 
@@ -88,5 +96,21 @@ div {
 @media (min-width: 100px) and (max-width: 250px){
     #mediaId {
         background-color: aqua;
+        height: 100px;
+    }
+    body{
+        background-color: grey;
+    }
+}
+
+/* Min means from 701px to onwards effect will be applied */
+@media (min-width: 701px) {
+    #mediaId {
+        background-color: blue;
+        width: 700px;
+        height: 400px;
+        color: white;
+        align-content: center;
+        font-size: large;
     }
 }
